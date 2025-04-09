@@ -39,6 +39,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Caution
+
+On a Windows Machine, you might run into errors that say "Module not found" after using the command "npm install @ldo/solid-react" and installing this repo. For some reason, when you try to import { BrowserSolidLdoProvider } from '@ldo/solid-react', it throws two module not found errors.
+
+In order to fix the modules not found error, simply copy and paste everything from this repositorie's package.json and tsconfig.json into your freshly installed version's package.json and tsconfig.json and everything should work accordingly with the tutorial.
+You may have to delete the package-lock.json once before doing this.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
